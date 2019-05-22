@@ -3,9 +3,11 @@
 
 @implementation RNRealmPath
 
-- (dispatch_queue_t)methodQueue
+- (NSDictionary *)constantsToExport
 {
-    return dispatch_get_main_queue();
+  NSURL *realmPathUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.chat.rocket.reactnativedj"];
+  NSString *realmPath = [[realmPathUrl path] stringByAppendingPathComponent:@""];
+  return @{@"realmPath" : realmPath};
 }
 RCT_EXPORT_MODULE()
 
