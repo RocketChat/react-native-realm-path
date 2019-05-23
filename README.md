@@ -34,15 +34,6 @@
       compile project(':react-native-realm-path')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNRealmPath.sln` in `node_modules/react-native-realm-path/windows/RNRealmPath.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Realm.Path.RNRealmPath;` to the usings at the top of the file
-  - Add `new RNRealmPathPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
 ```javascript
 import RNRealmPath from 'react-native-realm-path';
