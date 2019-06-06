@@ -19,4 +19,11 @@ public class RNRealmPathModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNRealmPath";
   }
+
+  @Override
+  public Map<String, Object> getConstants() {
+    final Map<String, Object> constants = new HashMap<>();
+    constants.put('realmPath', '');
+    return constants;
+  }
 }
