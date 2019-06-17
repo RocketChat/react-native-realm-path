@@ -5,7 +5,7 @@
 
 - (NSDictionary *)constantsToExport
 {
-  NSURL *realmPathUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.chat.rocket.reactnative"];
+  NSURL *realmPathUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.ios.chat.rocket"];
   NSString *realmPath = [[realmPathUrl path] stringByAppendingString:@"/"];
   return @{@"realmPath" : realmPath};
 }
