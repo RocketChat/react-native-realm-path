@@ -1,6 +1,8 @@
 
 # react-native-realm-path
 
+This is for use on Rocket.Chat.ReactNative. You need to change app group identifier if you try to use this. If you link that and not change app group identifier you will have a runtime error. You need to use one of your app groups on app group identifier because you need to access a folder that exists.
+
 ## Getting started
 
 `$ npm install react-native-realm-path --save`
