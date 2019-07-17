@@ -1,6 +1,9 @@
 
-import { NativeModules } from 'react-native';
+import { NativeModules, Platform } from 'react-native';
 
-const { RNRealmPath } = NativeModules;
+RNRealmPathAndroid = {
+  realmPath: ''
+};
 
+const RNRealmPath = Platform.OS === 'ios' ? NativeModules.RNRealmPath : RNRealmPathAndroid;
 export default RNRealmPath;
