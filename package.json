@@ -1,6 +1,6 @@
 {
   "name": "react-native-realm-path",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "A helper to Realm Path on AppGroup iOS.",
   "main": "index.js",
   "scripts": {
